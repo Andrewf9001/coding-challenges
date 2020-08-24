@@ -1,6 +1,6 @@
 // Playing with string functions
 let str = "I'm a string";
-let str2 = "Hi there!";
+let str2 = "Hi THeRe!";
 
 function strFunctions(str, str2) {
   let lowerStr = str2.toLowerCase();
