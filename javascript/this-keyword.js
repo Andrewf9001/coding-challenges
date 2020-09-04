@@ -1,4 +1,4 @@
-var warrior = {
+const warrior = {
   health: 100,
   damage: 89,
 
