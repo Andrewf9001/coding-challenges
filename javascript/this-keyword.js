@@ -25,13 +25,22 @@ const student = {
   },
 };
 
-student.renderSTudent = student.renderStudent.bind(student); //will return a new function with a new value that always points to the student
+// const teacher = {
+//   name: "Andrew",
+//   age: 29,
+//   renderStudent: function () {
+//     console.log(student.name, student.age);
+//   },
+// }; // When we use 'this' if there are changes it won't require you to change the code for
+// when we use this.name it will refer to the object and a change in the name won't require us changing our code
+
+student.renderSTudent = student.renderStudent.bind(student); // Will return a new function with a new value that always points to the student object
 
 const activities = {
   render: student.renderStudent,
 };
 
-student.render();
+student.renderStudent();
 
 class Student {
   constructor() {
@@ -49,3 +58,4 @@ class Student {
 }
 
 const andrew = new Student();
+andrew.addAttribute();

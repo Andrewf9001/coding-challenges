@@ -13,9 +13,9 @@ body {
   transition: ease-in-out 0.5s;
 }
 
-.bankai:hover {
+/* .bankai:hover {
   opacity: 0;
-}
+} */
 
 .vasto {
   position: absolute;
