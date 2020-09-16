@@ -1,6 +1,6 @@
 const warrior = {
   health: 100,
-  damage: 89,
+  damage: 39,
 
   remainingHealth: function () {
     return this.health - this.damage;
@@ -8,14 +8,16 @@ const warrior = {
 
   healthRemaining: function () {
     if (this.remainingHealth() > 0) {
-      return `You're still up! with ${this.remainingHealth()} health remaining`;
+      console.log(
+        `You're still up! with ${this.remainingHealth()} health remaining`
+      );
     } else {
-      return "You have fallen";
+      console.log("You have fallen");
     }
   },
 };
 
-console.log(warrior.healthRemaining());
+warrior.healthRemaining();
 
 const student = {
   name: "Andrew",
@@ -49,9 +51,9 @@ class Student {
     this.age = 20;
   }
 
-  addAttribute() {
-    this.test = "Success!";
-  }
+  // addAttribute() {
+  //   this.test = "Success!";
+  // }
 
   render() {
     console.log(this.name, this.age);
