@@ -19,13 +19,23 @@ cars = {
 #   f"We have {} cars available today"
 # ]
 
-def hachiroku_dealership():
+def hachiroku_dealership(cars):
   time.sleep(1)
   print("\nWelcome to Hachiroku!\n")
   time.sleep(1)
   welcome()
 
 def welcome():
-  car_list = input("Would you like to see what we have available?")
+  car_list = input("Would you like to see what we have available? ")
 
-hachiroku_dealership()
+  if car_list == 'yes':
+    for key, value in cars:
+      print("Car: ", key)
+      print("Year: ", value)
+  elif car_list == 'no':
+    quit()
+  else:
+    print("Please choose between yes and no")
+    welcome()
+
+hachiroku_dealership(cars)
