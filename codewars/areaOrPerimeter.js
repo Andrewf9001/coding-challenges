@@ -26,3 +26,12 @@ const areaOrPerimeter = (length , width) => {
 //     assert.strictEqual(areaOrPerimeter(6, 10), 32);
 //   });
 // });
+
+
+// Other Submissions:
+// const areaOrPerimeter = function(l , w) {
+//   let area = l * w;
+//   let perimeter = (l + w) * 2;
+  
+//   return l === w ? area : perimeter;
+// };
