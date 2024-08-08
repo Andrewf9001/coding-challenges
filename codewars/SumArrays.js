@@ -37,3 +37,11 @@ const sum = (numbers) => {
 // Test.assertEquals(sum([1, 5.2, 4, 0, -1]), 9.2);
 //   });
 // });
+
+
+// Submission
+// // Sum Numbers
+// function sum (numbers) {
+//   return numbers.reduce((previousValue, currentValue) => previousValue + currentValue, 0)  
+   
+// };
