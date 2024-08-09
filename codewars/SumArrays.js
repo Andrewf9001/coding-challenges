@@ -43,5 +43,4 @@ const sum = (numbers) => {
 // // Sum Numbers
 // function sum (numbers) {
 //   return numbers.reduce((previousValue, currentValue) => previousValue + currentValue, 0)  
-   
 // };
