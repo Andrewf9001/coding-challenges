@@ -53,11 +53,11 @@ const getSum = (a, b) => {
 
 // Submissions:
 // Refactored
-const getSumSubmission = (a, b) => {
-  const bigger = a > b ? a : b;
-  const smaller = a > b ? b : a;
-  let result = 0;
+// const getSumSubmission = (a, b) => {
+//   const bigger = a > b ? a : b;
+//   const smaller = a > b ? b : a;
+//   let result = 0;
 
-  for (let i = smaller; i <= bigger; i++) { result += i }
-  return result
-}
+//   for (let i = smaller; i <= bigger; i++) { result += i }
+//   return result
+// }
