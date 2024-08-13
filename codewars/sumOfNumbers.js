@@ -50,3 +50,14 @@ const getSum = (a, b) => {
 //     assert.strictEqual(getSum(2, 2),  2);
 //   })
 // });
+
+// Submissions:
+// Refactored
+const getSumSubmission = (a, b) => {
+  const bigger = a > b ? a : b;
+  const smaller = a > b ? b : a;
+  let result = 0;
+
+  for (let i = smaller; i <= bigger; i++) { result += i }
+  return result
+}
