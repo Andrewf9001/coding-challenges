@@ -32,3 +32,6 @@ const twiceAsOld = (dadAge, sonAge) => {
 //     assert.strictEqual(twiceAsOld(29,0) , 29);
 //   });
 // });
+
+// Submission:
+// const twiceAsOld = (dadYearsOld, sonYearsOld) => Math.abs(dadYearsOld - sonYearsOld * 2);
