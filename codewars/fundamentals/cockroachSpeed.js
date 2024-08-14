@@ -1,7 +1,7 @@
 const cockroachSpeed = (s) => {
   const cmps = 27.777778
   
-  if (s === 0) return 0
+  if (s === 0) return s
   else return Math.floor(cmps * s)
 }
 
