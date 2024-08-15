@@ -26,3 +26,9 @@ const findAverage = (array) => {
 //     assert.strictEqual(findAverage([1,2,3,4]), 2.5);
 //   });
 // });  
+
+
+// Submission:
+function find_average(array) {
+  return array.length ? array.reduce((a, b) => a + b) / array.length : 0;
+}
