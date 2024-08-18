@@ -26,3 +26,7 @@ const testEven = (num) => (num % 2 === 0) ? true : false;
 //     assert.strictEqual(testEven(-4), true, "testEven for 2");
 //   });
 // });
+
+
+// Submission:
+const testEvenSubmission = n => n % 2 === 0;
