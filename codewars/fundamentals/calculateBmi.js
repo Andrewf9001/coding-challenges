@@ -27,3 +27,10 @@ const bmi = (weight, height) => {
 // Test.assertEquals(bmi(80, 1.80), "Normal");
 //   });
 // });
+
+
+// Submission:
+function bmiSubmission(weight, height) {
+  let b = weight / height**2;
+  return b <= 18.5 ? 'Underweight' : b <= 25.0 ? 'Normal' : b <= 30.0 ? 'Overweight' : 'Obese';
+}
