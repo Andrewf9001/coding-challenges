@@ -15,3 +15,28 @@ const powersOfTwo = (n) => {
 // n = 0  ==> [1]        # [2^0]
 // n = 1  ==> [1, 2]     # [2^0, 2^1]
 // n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
+
+
+// Tests:
+// const chai = require("chai");
+// const assert = chai.assert;
+// chai.config.truncateThreshold=0;
+
+// describe("Basic Tests", function(){
+//   it("Testing for fixed tests", () => {
+//     assert.deepEqual(powersOfTwo(0), [1])
+//     assert.deepEqual(powersOfTwo(1), [1, 2])
+//     assert.deepEqual(powersOfTwo(4), [1, 2, 4, 8, 16])
+//   })
+// });
+
+// Submission:
+function powersOfTwoSub(n) {
+  var result = [];
+
+  for (var i = 0; i <= n; i++) {
+    result.push(Math.pow(2, i));
+  }
+  
+  return result;
+}
