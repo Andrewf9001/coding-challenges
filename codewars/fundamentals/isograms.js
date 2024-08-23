@@ -7,7 +7,6 @@ function isIsogram(str){
     
     lettersArray.forEach((char) => {
       if (letters[char]) {
-        letters[char]++
         results = false
       } else {
         letters[char] = 1
