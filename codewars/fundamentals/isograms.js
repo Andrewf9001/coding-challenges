@@ -1,4 +1,4 @@
-function isIsogram(str){
+const isIsogram = (str) => {
   if (!str) return true;
   else {
     const lettersArray = str.toLowerCase().split("")
@@ -42,3 +42,8 @@ function isIsogram(str){
 //     assert.strictEqual( isIsogram(""), true, "an empty string is a valid isogram" );
 //   });
 // });
+
+// Submission:
+// function isIsogram (str) {
+//   return !str || (str.length === new Set(str.toLowerCase()).size);
+// }
