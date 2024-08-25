@@ -49,3 +49,6 @@ const strCount = (str, letter) => {
 //     assert.strictEqual(strCount('',      'z'), 0);
 //   });
 // });
+
+// Submission:
+// const strCount = (str, letter) => str.split(letter).length - 1;
