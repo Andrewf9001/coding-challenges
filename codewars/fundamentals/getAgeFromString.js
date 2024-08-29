@@ -7,7 +7,6 @@ const getAge = (inputString) => Number(inputString[0]);
 
 // Assume the test input string is always a valid string. For example, the test input may be "1 year old" or "5 years old". The first character in the string is always a number.
 
-
 // Tests:
 // const chai = require("chai");
 // const assert = chai.assert;
@@ -17,6 +16,6 @@ const getAge = (inputString) => Number(inputString[0]);
 //   it("Testing for fixed tests", () => {
 //     assert.strictEqual(getAge("4 years old"), 4);
 //     assert.strictEqual(getAge("9 years old"), 9);
-//     assert.strictEqual(getAge("1 year old"), 1);    
+//     assert.strictEqual(getAge("1 year old"), 1);
 //   })
 // })

@@ -1,17 +1,15 @@
-const reverseSeq = n => {
-  const numsArray = []
-  
-  for (let i = 0; i < n; i++)
-    numsArray.push(i + 1)
-  
-  return numsArray.reverse()
+const reverseSeq = (n) => {
+  const numsArray = [];
+
+  for (let i = 0; i < n; i++) numsArray.push(i + 1);
+
+  return numsArray.reverse();
 };
 
 // Instructions:
 // Build a function that returns an array of integers from n to 1 where n>0.
 
 // Example : n=5 --> [5,4,3,2,1]
-
 
 // Tests:
 // const chai = require("chai");

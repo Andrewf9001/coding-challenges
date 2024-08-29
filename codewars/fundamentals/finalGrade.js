@@ -3,7 +3,7 @@ const finalGrade = (exam, projects) => {
   else if (exam > 75 && projects >= 5) return 90;
   else if (exam > 50 && projects >= 2) return 75;
   else return 0;
-}
+};
 
 // Instructions:
 // Create a function finalGrade, which calculates the final grade of a student depending on two parameters: a grade for the exam and a number of completed projects.
@@ -30,14 +30,13 @@ const finalGrade = (exam, projects) => {
 // 20, 2 --> 0
 // *Use Comparison and Logical Operators.
 
-
 // Tests:
 // const chai = require("chai");
 // const assert = chai.assert;
 // chai.config.truncateThreshold=0;
 
 // describe("Basic tests", () => {
-//   it("Testing for fixed tests", () => {  
+//   it("Testing for fixed tests", () => {
 //     assert.strictEqual(finalGrade(100, 12), 100);
 //     assert.strictEqual(finalGrade(85, 5), 90);
 //   });

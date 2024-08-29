@@ -1,8 +1,8 @@
-const areaOrPerimeter = (length , width) => {
+const areaOrPerimeter = (length, width) => {
   if (length === width) {
-    return length * width
+    return length * width;
   } else {
-    return (length + width) * 2
+    return (length + width) * 2;
   }
 };
 
@@ -16,7 +16,6 @@ const areaOrPerimeter = (length , width) => {
 // 3, 3 --> 9
 // Note: for the purposes of this kata you will assume that it is a square if its length and width are equal, otherwise it is a rectangle.
 
-
 // Tests:
 // const { assert } = require('chai');
 
@@ -27,11 +26,10 @@ const areaOrPerimeter = (length , width) => {
 //   });
 // });
 
-
 // Other Submissions:
 // const areaOrPerimeter = function(l , w) {
 //   let area = l * w;
 //   let perimeter = (l + w) * 2;
-  
+
 //   return l === w ? area : perimeter;
 // };

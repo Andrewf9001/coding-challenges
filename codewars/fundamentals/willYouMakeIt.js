@@ -1,7 +1,7 @@
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-  const fuelGauge = mpg * fuelLeft
-  
-  return fuelGauge >= distanceToPump ? true : false
+  const fuelGauge = mpg * fuelLeft;
+
+  return fuelGauge >= distanceToPump ? true : false;
 };
 
 // Instructions:
@@ -10,7 +10,6 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 // Considering these factors, write a function that tells you if it is possible to get to the pump or not.
 
 // Function should return true if it is possible and false if not.
-
 
 // Tests:
 // const assert = require("chai").assert;

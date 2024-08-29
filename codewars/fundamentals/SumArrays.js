@@ -1,8 +1,8 @@
 const sum = (numbers) => {
   if (numbers.length === 0) {
-    return numbers.length
+    return numbers.length;
   } else {
-    return numbers.reduce((acc, total) => acc + total)
+    return numbers.reduce((acc, total) => acc + total);
   }
 };
 
@@ -27,7 +27,6 @@ const sum = (numbers) => {
 // We're testing basic loops and math operations. This is for beginners who are just learning loops and math operations.
 // Advanced users may find this extremely easy and can easily write this in one line.
 
-
 // Tests:
 // const Test = require('@codewars/test-compat');
 
@@ -38,9 +37,8 @@ const sum = (numbers) => {
 //   });
 // });
 
-
 // Submission
 // // Sum Numbers
 // function sum (numbers) {
-//   return numbers.reduce((previousValue, currentValue) => previousValue + currentValue, 0)  
+//   return numbers.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
 // };

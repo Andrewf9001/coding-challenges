@@ -1,9 +1,16 @@
 const howMuchILoveYou = (nbPetals) => {
-  const petalOptions = ["I love you", "a little", "a lot", "passionately", "madly", "not at all"]
-  const petalIndex = (nbPetals - 1) % petalOptions.length
-  
-  return petalOptions[petalIndex]
-}
+  const petalOptions = [
+    "I love you",
+    "a little",
+    "a lot",
+    "passionately",
+    "madly",
+    "not at all",
+  ];
+  const petalIndex = (nbPetals - 1) % petalOptions.length;
+
+  return petalOptions[petalIndex];
+};
 
 // Instructions:
 // Who remembers back to their time in the schoolyard, when girls would take a flower and tear its petals, saying each of the following phrases each time a petal was torn:
@@ -20,20 +27,18 @@ const howMuchILoveYou = (nbPetals) => {
 
 // Your goal in this kata is to determine which phrase the girls would say at the last petal for a flower of a given number of petals. The number of petals is always greater than 0.
 
-
 // Tests:
 // const chai = require("chai");
 // const assert = chai.assert;
 // chai.config.truncateThreshold=0;
 
 // describe("howMuchILoveYou",function() {
-//   it("Basic tests",function() { 
+//   it("Basic tests",function() {
 //     assert.strictEqual(howMuchILoveYou(7),"I love you")
 //     assert.strictEqual(howMuchILoveYou(3),"a lot")
 //     assert.strictEqual(howMuchILoveYou(6),"not at all")
 //   });
 // })
-
 
 // Submission:
 // const answers = {

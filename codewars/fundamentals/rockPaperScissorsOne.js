@@ -1,29 +1,29 @@
 const rps = (p1, p2) => {
-  let results = ""
-  
+  let results = "";
+
   if (p1 === p2) {
-    return "Draw!"
+    return "Draw!";
   }
-  
+
   if (p1 === "rock" && p2 === "scissors") {
-    results = "Player 1 won!"
+    results = "Player 1 won!";
   } else if (p2 === "rock" && p1 === "scissors") {
-    results = "Player 2 won!"
+    results = "Player 2 won!";
   }
-    
-  if (p1 === "paper" && p2 === "rock"){
-    results = "Player 1 won!"
+
+  if (p1 === "paper" && p2 === "rock") {
+    results = "Player 1 won!";
   } else if (p2 === "paper" && p1 === "rock") {
-    results = "Player 2 won!"
-  } 
-    
-  if (p1 === "scissors" && p2 === "paper") {
-    results = "Player 1 won!"
-  } else if (p2 === "scissors" && p1 === "paper") {
-    results = "Player 2 won!"
+    results = "Player 2 won!";
   }
-  
-  return results
+
+  if (p1 === "scissors" && p2 === "paper") {
+    results = "Player 1 won!";
+  } else if (p2 === "scissors" && p1 === "paper") {
+    results = "Player 2 won!";
+  }
+
+  return results;
 };
 
 // Instructions:
@@ -34,7 +34,6 @@ const rps = (p1, p2) => {
 // "scissors", "paper" --> "Player 1 won!"
 // "scissors", "rock" --> "Player 2 won!"
 // "paper", "paper" --> "Draw!"
-
 
 // Tests:
 // const Test = require('@codewars/test-compat');

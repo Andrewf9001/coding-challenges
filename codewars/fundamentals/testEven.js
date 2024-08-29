@@ -1,4 +1,4 @@
-const testEven = (num) => (num % 2 === 0) ? true : false;
+const testEven = (num) => (num % 2 === 0 ? true : false);
 
 // Instructions:
 // In this Kata we are passing a number (n) into a function.
@@ -10,7 +10,6 @@ const testEven = (num) => (num % 2 === 0) ? true : false;
 // Numbers may be positive or negative, integers or floats.
 
 // Floats with decimal part non equal to zero are considered UNeven for this kata.
-
 
 // Tests:
 // const chai = require("chai");
@@ -27,6 +26,5 @@ const testEven = (num) => (num % 2 === 0) ? true : false;
 //   });
 // });
 
-
 // Submission:
-const testEvenSubmission = n => n % 2 === 0;
+const testEvenSubmission = (n) => n % 2 === 0;

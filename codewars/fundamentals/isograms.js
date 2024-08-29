@@ -1,21 +1,21 @@
 const isIsogram = (str) => {
   if (!str) return true;
   else {
-    const lettersArray = str.toLowerCase().split("")
-    const letters = {}
-    let results = true
-    
+    const lettersArray = str.toLowerCase().split("");
+    const letters = {};
+    let results = true;
+
     lettersArray.forEach((char) => {
       if (letters[char]) {
-        results = false
+        results = false;
       } else {
-        letters[char] = 1
+        letters[char] = 1;
       }
-    })
-    
-    return results
+    });
+
+    return results;
   }
-}
+};
 
 // Instructions
 // An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
@@ -25,7 +25,6 @@ const isIsogram = (str) => {
 // "Dermatoglyphics" --> true
 // "aba" --> false
 // "moOse" --> false (ignore letter case)
-
 
 // Tests:
 // const chai = require("chai");

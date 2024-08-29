@@ -1,8 +1,8 @@
-const simpleMultiplication = (number) => number % 2 == 0 ? number * 8 : number * 9
+const simpleMultiplication = (number) =>
+  number % 2 == 0 ? number * 8 : number * 9;
 
 // Instructions:
 // This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
-
 
 // Tests:
 // const chai = require("chai");
@@ -18,7 +18,6 @@ const simpleMultiplication = (number) => number % 2 == 0 ? number * 8 : number *
 //     assert.strictEqual(simpleMultiplication(5),45,'Should return given argument times nine...')
 //   });
 // });
-
 
 // Submission:
 // const simpleMultiplication = number => number%2 ? number * 9 : number * 8;

@@ -1,7 +1,7 @@
 const twiceAsOld = (dadAge, sonAge) => {
   if (sonAge === 0) return dadAge;
-  else return Math.abs((sonAge * 2) - dadAge);
-}
+  else return Math.abs(sonAge * 2 - dadAge);
+};
 
 // Instructions:
 // Your function takes two arguments:
@@ -18,7 +18,7 @@ const twiceAsOld = (dadAge, sonAge) => {
 // describe("Sample tests", function(){
 //   it("Testing for dad's age: 36 and son's age: 7", function(){
 //     assert.strictEqual(twiceAsOld(36,7) , 22);
-//   });  
+//   });
 //   it("Testing for dad's age: 55 and son's age: 30", function(){
 //     assert.strictEqual(twiceAsOld(55,30) , 5);
 //   });
