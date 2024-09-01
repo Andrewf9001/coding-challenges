@@ -28,4 +28,23 @@ class RomanNumerals {
 
     return results;
   }
+
+  static fromRoman(str) {
+    let results = 0;
+    const numeralSplit = str.split("");
+
+    numeralSplit.forEach((char, index) => {
+      const currentChar = numerals[char];
+      const nextChar = numerals[numeralSplit[index + 1]];
+
+      if (nextChar && currentChar < nextChar) {
+        results += nextChar - currentChar;
+        numeralSplit[index + 1] = "";
+      } else if (currentChar !== undefined) {
+        results += currentChar;
+      }
+    });
+
+    return results;
+  }
 }
