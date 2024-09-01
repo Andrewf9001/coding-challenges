@@ -113,3 +113,48 @@ class RomanNumerals {
 //     assert.strictEqual(RomanNumerals.fromRoman('MDCLXVI'), 1666);
 //   });
 // });
+
+// Submission:
+// const romanNum =  [
+//   { value: 1000, char: 'M' },
+//   { value: 900, char: 'CM' },
+//   { value: 500, char: 'D' },
+//   { value: 400, char: 'CD' },
+//   { value: 100, char: 'C' },
+//   { value: 90, char: 'XC' },
+//   { value: 50, char: 'L' },
+//   { value: 40, char: 'XL' },
+//   { value: 10, char: 'X' },
+//   { value: 9, char: 'IX' },
+//   { value: 5, char: 'V' },
+//   { value: 4, char: 'IV' },
+//   { value: 1, char: 'I' }
+// ]
+
+// class RomanNumerals {
+//   constructor() {
+
+//   }
+
+//   static toRoman(num) {
+//     return romanNum.reduce((result, current) => {
+//       while (num >= current.value) {
+//         result += current.char;
+//         num -= current.value
+//       }
+
+//       return result
+//     }, '')
+//   }
+
+//   static fromRoman(str) {
+//     return romanNum.reduce((result, current) => {
+//       while (!str.indexOf(current.char)) {
+//         result += current.value;
+//         str = str.replace(current.char, '')
+//       }
+
+//       return result
+//     }, 0)
+//   }
+// }
