@@ -38,3 +38,15 @@ const duplicateEncode = (word) => {
 //     assert.strictEqual(duplicateEncode("(( @"),"))((");
 //   });
 // });
+
+// Submission:
+// function duplicateEncode(word){
+//     let map = {};
+//     let characters = word.toLowerCase().split('');
+
+//     characters.forEach(char => {
+//       map[char] = map[char] ? ')' : '(';
+//     });
+
+//     return characters.map(char => map[char]).join('');
+// }
