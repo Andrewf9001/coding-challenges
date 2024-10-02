@@ -1,4 +1,19 @@
-const uniqueInOrder = (iterable) => {};
+const uniqueInOrder = (iterable) => {
+  let prevItem = null;
+  const results = [];
+  const iterableType = typeof iterable;
+  const iterableList =
+    iterableType === "string" ? iterable.split("") : iterable;
+
+  iterableList.forEach((item) => {
+    if (item !== prevItem) {
+      prevItem = item;
+      results.push(item);
+    }
+  });
+
+  return results;
+};
 
 // Instructions:
 // Implement the function unique_in_order which takes as argument a sequence and returns a list of items without any elements with the same value next to each other and preserving the original order of elements.
