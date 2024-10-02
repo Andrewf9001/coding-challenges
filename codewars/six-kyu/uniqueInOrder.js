@@ -34,3 +34,8 @@ const uniqueInOrder = (iterable) => {
 //     assert.deepEqual(uniqueInOrder('AAAABBBCCDAABBB'), ['A','B','C','D','A','B'])
 //   });
 // });
+
+// Submission:
+// var uniqueInOrder=function(iterable){
+//     return [...iterable].filter((item, index, newData) => item !== newData[index -1]);
+//   }
