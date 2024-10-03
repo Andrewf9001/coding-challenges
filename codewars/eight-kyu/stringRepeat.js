@@ -27,3 +27,6 @@ const repeatStr = (repeatCount, str) => {
 //     assert.strictEqual(repeatStr(2, "ha "), "ha ha ");
 //   });
 // });
+
+// Submission:
+// const repeatStr = (n,s) => s.repeat(n) ;
