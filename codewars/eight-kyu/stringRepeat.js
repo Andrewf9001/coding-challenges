@@ -1,5 +1,11 @@
-const repeatStr = (n, s) => {
-  return "";
+const repeatStr = (repeatCount, str) => {
+  let results = "";
+
+  for (let i = 0; i < repeatCount; i++) {
+    results += str;
+  }
+
+  return results;
 };
 
 // Instructions:
