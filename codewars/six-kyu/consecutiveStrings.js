@@ -1,0 +1,1 @@
+const longestConsec = (strArr, k) => {};
