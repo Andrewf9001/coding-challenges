@@ -1,5 +1,6 @@
 const digitize = (n) => {
   const numToString = `${n}`.split("");
+  //   const numToString = String(n).split("");
   const results = [];
 
   numToString.forEach((num) => results.unshift(Number(num)));
@@ -26,3 +27,8 @@ const digitize = (n) => {
 //     assert.deepEqual(digitize(0), [0]);
 //   });
 // });
+
+// Submission:
+// function digitize(n) {
+//     return String(n).split('').reverse().map(Number)
+//   }
