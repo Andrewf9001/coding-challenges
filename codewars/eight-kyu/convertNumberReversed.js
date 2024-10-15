@@ -1,5 +1,10 @@
 const digitize = (n) => {
-  return "";
+  const numToString = `${n}`.split("");
+  const results = [];
+
+  numToString.forEach((num) => results.unshift(Number(num)));
+
+  return results;
 };
 
 // Instructions:
