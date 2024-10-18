@@ -1,7 +1,16 @@
-const squareDigits = (num) => {
-  return 0;
-};
+const squareDigits = (number) => {
+  let results = "";
+  const numToString = number.toString().split("");
 
+  numToString.forEach((num) => {
+    const numValue = Number(num);
+    const squared = numValue * numValue;
+
+    results += squared.toString();
+  });
+
+  return Number(results);
+};
 //Instructions:
 //   Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
 
