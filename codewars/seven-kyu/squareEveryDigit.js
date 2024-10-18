@@ -39,3 +39,8 @@ const squareDigits = (number) => {
 //     assert.strictEqual(squareDigits(0), 0);
 //   });
 // })
+
+// Submission:
+// function squareDigits(num){
+//     return +num.toString().split('').map(i => i*i).join('');
+//   }
