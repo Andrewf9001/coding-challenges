@@ -1,4 +1,21 @@
-const order = (words) => {};
+const order = (words) => {
+  if (!words) return "";
+  else {
+    const orderWords = words
+      .split(" ")
+      .sort((a, b) => {
+        const findNum = (word) => [...word].find((char) => !isNaN(char));
+
+        const numA = findNum(a);
+        const numB = findNum(b);
+
+        return numA - numB;
+      })
+      .join(" ");
+
+    return orderWords;
+  }
+};
 
 // Instructions:
 // Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result.
