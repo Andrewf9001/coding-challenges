@@ -1,4 +1,4 @@
-function greet(language) {}
+const greet = (language) => {};
 
 // Instructions:
 // Your start-up's BA has told marketing that your website has a large audience in Scandinavia and surrounding countries. Marketing thinks it would be great to welcome visitors to the site in their own language. Luckily you already use an API that detects the user's location, so this is an easy win.
@@ -32,3 +32,22 @@ function greet(language) {}
 // IP_ADDRESS_INVALID - not a valid ipv4 or ipv6 ip address
 // IP_ADDRESS_NOT_FOUND - ip address not in the database
 // IP_ADDRESS_REQUIRED - no ip address was supplied
+[
+  ("english", "Welcome"),
+  ("czech", "Vitejte"),
+  ("danish", "Velkomst"),
+  ("dutch", "Welkom"),
+  ("estonian", "Tere tulemast"),
+  ("finnish", "Tervetuloa"),
+  ("flemish", "Welgekomen"),
+  ("french", "Bienvenue"),
+  ("german", "Willkommen"),
+  ("irish", "Failte"),
+  ("italian", "Benvenuto"),
+  ("latvian", "Gaidits"),
+  ("lithuanian", "Laukiamas"),
+  ("polish", "Witamy"),
+  ("spanish", "Bienvenido"),
+  ("swedish", "Valkommen"),
+  ("welsh", "Croeso"),
+];
