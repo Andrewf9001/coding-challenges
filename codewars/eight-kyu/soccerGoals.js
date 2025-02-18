@@ -16,3 +16,16 @@ const goals = (laLigaGoals, copaDelReyGoals, championsLeagueGoals) => {
 // For example:
 
 // 5, 10, 2  -->  17
+
+// Tests
+// const Test = require('@codewars/test-compat');
+
+// describe("Tests", () => {
+//   it("test", () => {
+// Test.assertEquals(goals(0,0,0), 0)
+// Test.assertEquals(goals(43, 10, 5), 58)
+//   });
+// });
+
+// Submissions
+// const goals = (...goalsArray) => goalsArray.reduce((a, b) => a + b);
