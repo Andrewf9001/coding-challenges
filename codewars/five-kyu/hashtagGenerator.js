@@ -1,4 +1,26 @@
-const generateHashtag = (str) => {};
+const generateHashtag = (str) => {
+  const trimmedStr = str.trim();
+
+  if (!trimmedStr) return false;
+  else {
+    let results = "#";
+    const splitStr = str.split(" ");
+
+    splitStr.forEach((word) => {
+      if (word.length === 1) return (results += word.toUpperCase());
+      else {
+        const firstLetter = word.charAt(0).toUpperCase();
+        const slicedWord = word.slice(1);
+        const joinedWord = firstLetter + slicedWord;
+
+        return (results += joinedWord);
+      }
+    });
+
+    if (results.length > 140) return false;
+    else return results;
+  }
+};
 
 // Instructions
 // The marketing team is spending way too much time typing in hashtags.
