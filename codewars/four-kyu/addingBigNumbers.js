@@ -1,6 +1,4 @@
-function add(a, b) {
-  return (Number(a) + Number(b)).toString(); // Fix me!
-}
+const add = (a, b) => {};
 
 // Instructions
 // We need to sum big numbers and we require your help.
