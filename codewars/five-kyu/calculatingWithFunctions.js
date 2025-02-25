@@ -1,18 +1,60 @@
-function zero() {}
-function one() {}
-function two() {}
-function three() {}
-function four() {}
-function five() {}
-function six() {}
-function seven() {}
-function eight() {}
-function nine() {}
+// Numbers
+function zero(op = null) {
+  return op ? op(0) : 0;
+}
 
-function plus() {}
-function minus() {}
-function times() {}
-function dividedBy() {}
+function one(op = null) {
+  return op ? op(1) : 1;
+}
+
+function two(op = null) {
+  return op ? op(2) : 2;
+}
+
+function three(op = null) {
+  return op ? op(3) : 3;
+}
+
+function four(op = null) {
+  return op ? op(4) : 4;
+}
+
+function five(op = null) {
+  return op ? op(5) : 5;
+}
+
+function six(op = null) {
+  return op ? op(6) : 6;
+}
+
+function seven(op = null) {
+  return op ? op(7) : 7;
+}
+
+function eight(op = null) {
+  return op ? op(8) : 8;
+}
+
+function nine(op = null) {
+  return op ? op(9) : 9;
+}
+
+// Operations
+function plus(num) {
+  return (x) => x + num;
+}
+
+function minus(num) {
+  return (x) => x - num;
+}
+
+function times(num) {
+  return (x) => x * num;
+}
+
+function dividedBy(num) {
+  return (x) => Math.floor(x / num);
+}
 
 // Instructions
 // This time we want to write calculations using functions and get the results. Let's have a look at some examples:
@@ -29,3 +71,15 @@ function dividedBy() {}
 // The most outer function represents the left operand, the most inner function represents the right operand
 // Division should be integer division. For example, this should return 2, not 2.666666...:
 // eight(dividedBy(three()));
+
+// Test
+// const { assert } = require('chai');
+
+// describe("Tests", () => {
+//   it("test", () => {
+//     assert.strictEqual(seven(times    (five ())), 35, "seven(times(five ()))");
+//     assert.strictEqual(four (plus     (nine ())), 13, "four (plus(nine ()))");
+//     assert.strictEqual(eight(minus    (three())),  5, "eight(minus(three()))");
+//     assert.strictEqual(six  (dividedBy(two  ())),  3, "six(dividedBy(two()))");
+//   });
+// });
